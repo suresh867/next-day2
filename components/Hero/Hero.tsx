@@ -9,12 +9,10 @@ import Footer from './Footer'
 const Hero = () => {
   return (
     <div>
-      <Navbar />
       <Main />
       <Section1 />  
       <Section2 />
       <Section3 price={150} />
-      <Footer />
     </div>
   )
 }

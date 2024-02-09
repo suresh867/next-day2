@@ -31,7 +31,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <p className="text-center">Copyright@sureshpathak 2024</p>
+                <p className="text-center m-0">Copyright@sureshpathak 2024</p>
             </div>
         </>
     )
