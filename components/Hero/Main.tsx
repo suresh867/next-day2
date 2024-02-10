@@ -16,7 +16,7 @@ const Main = () => {
                         ea accusantium rerum ipsum. Hic atque culp!
                     </p>
                 </div>
-                <button className='bg-[#59546C] w-44 h-10 border border-[#59546C] rounded-lg'>Our Services</button>
+                <button className='bg-[#59546C] w-44 h-10 -2 border-[#59546C] rounded-lg text-white hover:bg-[#111]'>Our Services</button>
             </main>
         </>
     )

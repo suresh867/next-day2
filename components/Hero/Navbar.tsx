@@ -14,18 +14,18 @@ const Navbar = () => {
     return (
         <>
              <nav className=" 
-            relative w-[100%] bg-blue-400 bg-position-fixed
+            relative w-[100%] bg-blue-400 bg-position-fixed z-10
             ">
                 <div className={`min-w-[70%]  min-h-[95vh]  absolute top-[100%] left-0 bg-[#0E131F] ${icon ? "-translate-x-full" : "translate-x-70"} `}>
                     <ul className='items-center  justify-around  text-white'>
                         <li className='transition duration-[2s] ease-in-out hover:border-b-2 border-transparent hover:border-blue-500 text-2xl p-5'>
                             <Link href='/'>Home</Link>
                         </li>
-                        <li className='transition duration-150 ease-in-out hover:underline text-2xl font-mono px-5 py-2 '>Services</li>
-                        <li className='transition duration-150 ease-in-out hover:underline text-2xl font-mono px-5 py-2 '>About Us</li>
-                        <li className='transition duration-150 ease-in-out hover:underline text-2xl font-mono px-5 py-2 '>
+                        <li className='transition duration-[2s] ease-in-out hover:border-b-2 border-transparent hover:border-blue-500 text-2xl p-5'>Services</li>
+                        <li className='transition duration-[2s] ease-in-out hover:border-b-2 border-transparent hover:border-blue-500 text-2xl p-5 '>About Us</li>
+                        <li className='transition duration-[2s] ease-in-out hover:border-b-2 border-transparent hover:border-blue-500 text-2xl p-5 '>
                             <Link href='/Contact'>Contact Us</Link> </li>
-                        <li className='transition duration-150 ease-in-out hover:underline text-2xl font-mono px-5 py-2 '>
+                        <li className='transition duration-[2s] ease-in-out hover:border-b-2 border-transparent hover:border-blue-500 text-2xl p-5 '>
                             <Link href='/Pricing'>Pricing</Link>
                         </li>
                     </ul>
@@ -42,7 +42,9 @@ const Navbar = () => {
                             <li className='transition duration-300 ease-in-out hover:border-b-2 border-transparent hover:border-blue-500 cursor-pointer'>
                             <Link href='/Contact'>Contact Us</Link>
                             </li>
-                            <li className='transition duration-300 ease-in-out hover:border-b-2 border-transparent hover:border-blue-500 cursor-pointer'>Pricing</li>
+                            <li className='transition duration-300 ease-in-out hover:border-b-2 border-transparent hover:border-blue-500 cursor-pointer'>
+                                <Link href='/Pricing'>Pricing</Link>
+                            </li>
                         </ul>
                         <button className="md:hidden p-3 font-bold text-4xl" onClick={toggleIcon}>{icon ? <RxHamburgerMenu /> : <RxCross1 />}</button>
                     </div>
